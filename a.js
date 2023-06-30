@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const data = fs.readFileSync('./小红书商品分类.json').toString();
+const data = fs.readFileSync('./a.json').toString();
 
 const jsonData = JSON.parse(data);
 
@@ -27,4 +27,4 @@ function filter(items) {
 
 const filterData = filter(jsonData);
 
-fs.writeFileSync('./bb.json', JSON.stringify(filterData, null, 2))
+fs.writeFileSync('./aa.json', JSON.stringify(filterData, null, 2))
