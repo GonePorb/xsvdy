@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const data = fs.readFileSync('./aa.json').toString();
+const data = fs.readFileSync('./bb.json').toString();
 
 const jsonData = JSON.parse(data);
 
@@ -18,8 +18,8 @@ function filter(items) {
         // if (item.children && item.children.length) {
         //     filterItem.children = filter(item.children);
         // }
-        
-        fs.writeFileSync(`./${item.name}.json`, '')
+
+        fs.writeFileSync(`./${item.name.replace(/\//g, '-')}.json`, '')
         resArr.push(filterItem);
         console.log('filterItem', filterItem)
     }
