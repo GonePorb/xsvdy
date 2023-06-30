@@ -19,7 +19,7 @@ function filter(items) {
         //     filterItem.children = filter(item.children);
         // }
         
-        fs.writeFileSync(`./${item.name}.json`, '')
+        fs.writeFileSync(`./aa-d/${item.name}.json`, '')
         resArr.push(filterItem);
         console.log('filterItem', filterItem)
     }

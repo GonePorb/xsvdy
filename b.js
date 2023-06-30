@@ -19,7 +19,7 @@ function filter(items) {
         //     filterItem.children = filter(item.children);
         // }
 
-        fs.writeFileSync(`./${item.name.replace(/\//g, '-')}.json`, '')
+        fs.writeFileSync(`./bb-d/${item.name.replace(/\//g, '-')}.json`, '')
         resArr.push(filterItem);
         console.log('filterItem', filterItem)
     }
